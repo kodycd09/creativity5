@@ -12,7 +12,7 @@ $(document).ready(function(){
             data: jobj,
             contentType: "application/json; charset=utf-8",
             success: function(data,textStatus) {
-                $("#done").html(textStatus);
+                $("#done").html(url + textStatus);
             }
         })
     });
@@ -22,11 +22,21 @@ $(document).ready(function(){
             url:url,
             type: "GET",
             success: function(data, textStatus) {
-                console.log(data);
+                $("#comments").html("");
                 $.each( data, function( i, val ) {
                     $("#comments").append("<br>" + data[i].Name + ": " + data[i].Comment);
                 });
             }
         })
+    });
+    $("#deleteComments").click(function(){
+       var url = "deleteComments";
+       $.ajax({
+           url:url,
+           type: "DELETE",
+           success: function(data, textStatus) {
+               $("#done").html(url + textStatus);
+           }
+       })
     });
 });

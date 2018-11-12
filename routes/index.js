@@ -47,6 +47,11 @@ router.get('/getComments', function(req, res, next) {
 /* DELETE ALL comments from database */
 router.delete('/deleteComments', function(req, res, next) {
    console.log("In the DELETE route"); 
+   db.collection("comments").deleteMany({}, function(err, obj) {
+       if (err) return console.error(err);
+       console.log(obj.result.n + " document(s) deleted");
+   });
+   res.textStatus(200);
 });
 
 module.exports = router;
