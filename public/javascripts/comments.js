@@ -29,6 +29,21 @@ $(document).ready(function(){
             }
         })
     });
+    $("#getPersonComments").click(function(){
+        var url = "getPersonComments";
+        var name = {Name:$("#name").val()};
+        $.ajax({
+            url:url,
+            type: "PUT",
+            data: name,
+            success: function(data, textStatus) {
+                $("#comments").html("");
+                $.each( data, function( i, val ) {
+                    $("#comments").append("<br>" + data[i].Name + ": " + data[i].Comment);
+                });
+            }
+        })
+    });
     $("#deleteComments").click(function(){
        var url = "deleteComments";
        $.ajax({

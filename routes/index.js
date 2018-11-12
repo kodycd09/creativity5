@@ -38,10 +38,23 @@ router.get('/getComments', function(req, res, next) {
     Comment.find(function(err,commentList) {
         if (err) return console.error(err);
         else {
-            console.log(commentList);
+            console.log(req.body);
             res.json(commentList);
         }
     })
+});
+
+/* GET comments by name from database */
+router.put('/getPersonComments', function(req, res, next) {
+    console.log("In the PUT route");
+    console.log(req.body.Name);
+    Comment.find( req.body, function(err, obj) {
+        if (err) return console.error(err);
+        else {
+            console.log(obj);
+            res.json(obj);
+        }
+    });
 });
 
 /* DELETE ALL comments from database */
