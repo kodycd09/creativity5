@@ -16,4 +16,17 @@ $(document).ready(function(){
             }
         })
     });
+    $("#getComments").click(function(){
+        var url = "getComments";
+        $.ajax({
+            url:url,
+            type: "GET",
+            success: function(data, textStatus) {
+                console.log(data);
+                $.each( data, function( i, val ) {
+                    $("#comments").append("<br>" + data[i].Name + ": " + data[i].Comment);
+                });
+            }
+        })
+    });
 });

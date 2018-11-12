@@ -33,7 +33,7 @@ router.post('/comment', function(req, res, next) {
 });
 
 /* GET comments from database */
-router.get('/comment', function(req, res, next) {
+router.get('/getComments', function(req, res, next) {
     console.log("In the GET route");
     Comment.find(function(err,commentList) {
         if (err) return console.error(err);
@@ -42,6 +42,11 @@ router.get('/comment', function(req, res, next) {
             res.json(commentList);
         }
     })
+});
+
+/* DELETE ALL comments from database */
+router.delete('/deleteComments', function(req, res, next) {
+   console.log("In the DELETE route"); 
 });
 
 module.exports = router;
