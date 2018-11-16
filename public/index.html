@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Comments!</title>
+<title>Get Help</title>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="javascripts/comments.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 </head>
 
 <body>
-<form id="commentForm" action="">
-<label for="name">Name: </label><input type="text" id="name" placeholder="Name"><br>
-<label for="comment">comment: </label><input type="text" id="comment" placeholder="Comment"><br>
+<form id="askForm" action="">
+<label for="name">Name: </label><input type="text" id="name" placeholder="Name">  <button id="submitRequest">Submit Request</button> <button id="deleteRequest">Mark their projects complete</button><br>
+<label for="request">Request: </label><input type="text" id="request" placeholder="My _____ broke..."><br>
+<label for="duration">Duration: </label><input type="number" id="duration" placeholder="minutes"><br>
 </form>
 
-<button id="postComment">Post Comment</button>
-<button id="getComments">Get Comments</button>
-<button id="deleteComments">Delete All</button>
-<button id="getPersonComments">Get Comments by Name</button>
-<div id="json"></div>
+
+<button id="getRequests">View Requests</button>
+
+<button id="deleteAllRequests">Delete All Requests</button>
+<!--<button id="getPersonComments">Get Comments by Name</button>-->
 <div id="done"></div>
-<div id="comments"></div>
+<div id="requests"></div>
 </body>
 </html>

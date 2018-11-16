@@ -4,14 +4,15 @@ var router = express.Router();
 /* Set up mongoose in order to connect to mongo database */
 var mongoose = require('mongoose'); //Adds mongoose as a usable dependency
 
-mongoose.connect('mongodb://localhost/commentDB',{ useNewUrlParser: true }); //Connects to a mongo database called "commentDB"
+mongoose.connect('mongodb://localhost/requestDB',{ useNewUrlParser: true }); //Connects to a mongo database called "requestDB"
 
-var commentSchema = mongoose.Schema({ //Defines the Schema for this database
+var requestSchema = mongoose.Schema({ //Defines the Schema for this database
     Name: String,
-    Comment: String
+    Request: String,
+    Duration: Number
 });
 
-var Comment = mongoose.model('Comment', commentSchema); //Makes an object from that schema as a model
+var Request = mongoose.model('Request', requestSchema); //Makes an object from that schema as a model
 
 var db = mongoose.connection; //Saves the connection as a variable to use
 db.on('error', console.error.bind(console, 'connection error:')); //Checks for connection errors
@@ -20,10 +21,10 @@ db.once('open', function() { //Lets us know when we're connected
 });
 
 /* POST comments to database */
-router.post('/comment', function(req, res, next) {
-    console.log("POST comment route"); 
+router.post('/request', function(req, res, next) {
+    console.log("POST request route"); 
     console.log(req.body);
-    var newcomment = new Comment(req.body); 
+    var newcomment = new Request(req.body); 
     console.log(newcomment); 
     newcomment.save(function(err, post) { 
         if (err) return console.error(err);
@@ -33,22 +34,22 @@ router.post('/comment', function(req, res, next) {
 });
 
 /* GET comments from database */
-router.get('/getComments', function(req, res, next) {
+router.get('/getRequests', function(req, res, next) {
     console.log("In the GET route");
-    Comment.find(function(err,commentList) {
+    Request.find(function(err,requestList) {
         if (err) return console.error(err);
         else {
-            console.log(req.body);
-            res.json(commentList);
+            console.log(requestList);
+            res.json(requestList);
         }
     })
 });
 
 /* GET comments by name from database */
-router.put('/getPersonComments', function(req, res, next) {
-    console.log("In the PUT route");
-    console.log(req.body.Name);
-    Comment.find( req.body, function(err, obj) {
+router.delete('/deleteRequest', function(req, res, next) {
+    console.log("In the deleteRequest route");
+    console.log(req.body);
+    db.collection("requests").remove( req.body, true, function(err, obj) {
         if (err) return console.error(err);
         else {
             console.log(obj);
@@ -58,9 +59,9 @@ router.put('/getPersonComments', function(req, res, next) {
 });
 
 /* DELETE ALL comments from database */
-router.delete('/deleteComments', function(req, res, next) {
+router.delete('/deleteAllRequests', function(req, res, next) {
    console.log("In the DELETE route"); 
-   db.collection("comments").deleteMany({}, function(err, obj) {
+   db.collection("requests").deleteMany( {} /*req.body*/, function(err, obj) {
         if (err) return console.error(err);
         else{
             res.json(obj);
