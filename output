@@ -1,100 +1,200 @@
 nohup: ignoring input
 Connected
-[0mGET / [36m304 [0m5.279 ms - -[0m
-[0mGET /javascripts/comments.js [36m304 [0m1.482 ms - -[0m
-[0mGET http://5.188.210.12/echo.php [33m404 [0m237.340 ms - 2013[0m
-Error: Failed to lookup view "error" in views directory "/var/www/html/lab-5-mongo-kodycd09/views"
-    at EventEmitter.render (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/application.js:580:17)
-    at ServerResponse.render (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/response.js:1008:7)
-    at /var/www/html/lab-5-mongo-kodycd09/app.js:38:7
-    at Layer.handle_error (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/layer.js:71:5)
-    at trim_prefix (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:315:13)
-    at /var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:284:7
-    at Function.process_params (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:335:12)
-    at next (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:275:10)
-    at /var/www/html/lab-5-mongo-kodycd09/app.js:27:3
-    at Layer.handle [as handle_request] (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/layer.js:95:5)
-    at trim_prefix (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:317:13)
-    at /var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:284:7
-    at Function.process_params (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:335:12)
-    at next (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:275:10)
-    at /var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:635:15
-    at next (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:260:14)
-[0mGET / [32m200 [0m4.432 ms - 697[0m
-[0mGET /javascripts/comments.js [32m200 [0m1.363 ms - 1746[0m
-[0mGET /favicon.ico [33m404 [0m2.016 ms - 2013[0m
-Error: Failed to lookup view "error" in views directory "/var/www/html/lab-5-mongo-kodycd09/views"
-    at EventEmitter.render (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/application.js:580:17)
-    at ServerResponse.render (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/response.js:1008:7)
-    at /var/www/html/lab-5-mongo-kodycd09/app.js:38:7
-    at Layer.handle_error (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/layer.js:71:5)
-    at trim_prefix (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:315:13)
-    at /var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:284:7
-    at Function.process_params (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:335:12)
-    at next (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:275:10)
-    at /var/www/html/lab-5-mongo-kodycd09/app.js:27:3
-    at Layer.handle [as handle_request] (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/layer.js:95:5)
-    at trim_prefix (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:317:13)
-    at /var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:284:7
-    at Function.process_params (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:335:12)
-    at next (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:275:10)
-    at /var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:635:15
-    at next (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:260:14)
-POST comment route
-{ Name: 'TA', Comment: 'a' }
-{ _id: 5bec8a0616bcf0556eee72ba, Name: 'TA', Comment: 'a' }
-{ _id: 5bec8a0616bcf0556eee72ba,
-  Name: 'TA',
-  Comment: 'a',
-  __v: 0 }
-[0mPOST /comment [32m200 [0m42.361 ms - 2[0m
-POST comment route
-{ Name: 'TA', Comment: 'b' }
-{ _id: 5bec8a0816bcf0556eee72bb, Name: 'TA', Comment: 'b' }
-{ _id: 5bec8a0816bcf0556eee72bb,
-  Name: 'TA',
-  Comment: 'b',
-  __v: 0 }
-[0mPOST /comment [32m200 [0m4.085 ms - 2[0m
-POST comment route
-{ Name: '2', Comment: 'b' }
-{ _id: 5bec8a0a16bcf0556eee72bc, Name: '2', Comment: 'b' }
-{ _id: 5bec8a0a16bcf0556eee72bc, Name: '2', Comment: 'b', __v: 0 }
-[0mPOST /comment [32m200 [0m4.221 ms - 2[0m
-POST comment route
-{ Name: '2', Comment: 'c' }
-{ _id: 5bec8a0d16bcf0556eee72bd, Name: '2', Comment: 'c' }
-{ _id: 5bec8a0d16bcf0556eee72bd, Name: '2', Comment: 'c', __v: 0 }
-[0mPOST /comment [32m200 [0m2.659 ms - 2[0m
 In the GET route
-{}
-[0mGET /getComments [32m200 [0m19.938 ms - 275[0m
-In the PUT route
-2
-[ { _id: 5bec8a0a16bcf0556eee72bc, Name: '2', Comment: 'b', __v: 0 },
-  { _id: 5bec8a0d16bcf0556eee72bd, Name: '2', Comment: 'c', __v: 0 } ]
-[0mPUT /getPersonComments [32m200 [0m4.907 ms - 137[0m
-In the GET route
-{}
-[0mGET /getComments [36m304 [0m2.959 ms - -[0m
-In the PUT route
-TA
-[ { _id: 5bec8a0616bcf0556eee72ba,
-    Name: 'TA',
-    Comment: 'a',
-    __v: 0 },
-  { _id: 5bec8a0816bcf0556eee72bb,
-    Name: 'TA',
-    Comment: 'b',
+[ { _id: 5bee55254810757ec2b6129f,
+    Name: 'McKenna',
+    Request: 'I\'m still sleeping',
+    Duration: 730,
     __v: 0 } ]
-[0mPUT /getPersonComments [32m200 [0m3.907 ms - 139[0m
+[0mGET /getRequests [36m304 [0m40.846 ms - -[0m
+POST request route
+{ Name: '', Request: 'blank', Duration: '70' }
+{ _id: 5bee578371a37501d54e5a19,
+  Name: '',
+  Request: 'blank',
+  Duration: 70 }
+{ _id: 5bee578371a37501d54e5a19,
+  Name: '',
+  Request: 'blank',
+  Duration: 70,
+  __v: 0 }
+[0mPOST /request [32m200 [0m33.174 ms - 2[0m
+[0mGET /? [36m304 [0m2.610 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.130 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.721 ms - -[0m
 In the GET route
-{}
-[0mGET /getComments [36m304 [0m3.417 ms - -[0m
-In the DELETE route
-[0mDELETE /deleteComments [32m200 [0m2.500 ms - 14[0m
+[ { _id: 5bee55254810757ec2b6129f,
+    Name: 'McKenna',
+    Request: 'I\'m still sleeping',
+    Duration: 730,
+    __v: 0 },
+  { _id: 5bee578371a37501d54e5a19,
+    Name: '',
+    Request: 'blank',
+    Duration: 70,
+    __v: 0 } ]
+[0mGET /getRequests [32m200 [0m4.711 ms - 192[0m
+In the deleteRequest route
+{ Name: '' }
+(node:469) DeprecationWarning: collection.remove is deprecated. Use deleteOne, deleteMany, or bulkWrite instead.
+CommandResult {
+  result: { n: 1, ok: 1 },
+  connection: 
+   Connection {
+     domain: null,
+     _events: 
+      { error: [Object],
+        close: [Object],
+        timeout: [Object],
+        parseError: [Object] },
+     _eventsCount: 4,
+     _maxListeners: undefined,
+     options: 
+      { host: 'localhost',
+        port: 27017,
+        size: 5,
+        minSize: 0,
+        connectionTimeout: 30000,
+        socketTimeout: 360000,
+        keepAlive: true,
+        keepAliveInitialDelay: 300000,
+        noDelay: true,
+        ssl: false,
+        checkServerIdentity: true,
+        ca: null,
+        crl: null,
+        cert: null,
+        key: null,
+        passPhrase: null,
+        rejectUnauthorized: false,
+        promoteLongs: true,
+        promoteValues: true,
+        promoteBuffers: false,
+        reconnect: true,
+        reconnectInterval: 1000,
+        reconnectTries: 30,
+        domainsEnabled: false,
+        disconnectHandler: [Object],
+        cursorFactory: [Object],
+        emitError: true,
+        monitorCommands: false,
+        promiseLibrary: [Function: Promise],
+        clientInfo: [Object],
+        servers: [Object],
+        caseTranslate: true,
+        useNewUrlParser: true,
+        db: 'requestDB',
+        dbName: 'requestDB',
+        socketTimeoutMS: 360000,
+        connectTimeoutMS: 30000,
+        bson: BSON {} },
+     id: 0,
+     logger: Logger { className: 'Connection' },
+     bson: BSON {},
+     tag: undefined,
+     messageHandler: [Function],
+     maxBsonMessageSize: 67108864,
+     port: 27017,
+     host: 'localhost',
+     family: undefined,
+     keepAlive: true,
+     keepAliveInitialDelay: 300000,
+     noDelay: true,
+     connectionTimeout: 30000,
+     socketTimeout: 360000,
+     destroyed: false,
+     domainSocket: false,
+     singleBufferSerializtion: true,
+     serializationFunction: 'toBinUnified',
+     ca: null,
+     crl: null,
+     cert: null,
+     key: null,
+     passphrase: null,
+     ciphers: null,
+     ecdhCurve: null,
+     ssl: false,
+     rejectUnauthorized: false,
+     checkServerIdentity: true,
+     responseOptions: 
+      { promoteLongs: true,
+        promoteValues: true,
+        promoteBuffers: false },
+     flushing: false,
+     queue: [],
+     connection: 
+      Socket {
+        connecting: false,
+        _hadError: false,
+        _handle: [Object],
+        _parent: null,
+        _host: 'localhost',
+        _readableState: [Object],
+        readable: true,
+        domain: null,
+        _events: [Object],
+        _eventsCount: 7,
+        _maxListeners: undefined,
+        _writableState: [Object],
+        writable: true,
+        allowHalfOpen: false,
+        destroyed: false,
+        _bytesDispatched: 1265,
+        _sockname: null,
+        _pendingData: null,
+        _pendingEncoding: '',
+        server: null,
+        _server: null,
+        _idleTimeout: 360000,
+        _idleNext: [Object],
+        _idlePrev: [Object],
+        _idleStart: 28414,
+        read: [Function],
+        _consuming: true },
+     writeStream: null,
+     hashedName: '29bafad3b32b11dc7ce934204952515ea5984b3c',
+     workItems: [],
+     buffer: null,
+     sizeOfMessage: 0,
+     bytesRead: 0,
+     stubBuffer: null },
+  message: 
+   Response {
+     parsed: true,
+     raw: <Buffer 3c 00 00 00 cc bd 02 00 0a 00 00 00 01 00 00 00 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 18 00 00 00 10 6e 00 01 00 00 00 01 6f 6b ... >,
+     data: <Buffer 08 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 18 00 00 00 10 6e 00 01 00 00 00 01 6f 6b 00 00 00 00 00 00 00 f0 3f 00>,
+     bson: BSON {},
+     opts: 
+      { promoteLongs: true,
+        promoteValues: true,
+        promoteBuffers: false },
+     length: 60,
+     requestId: 179660,
+     responseTo: 10,
+     opCode: 1,
+     fromCompressed: undefined,
+     responseFlags: 8,
+     cursorId: Long { _bsontype: 'Long', low_: 0, high_: 0 },
+     startingFrom: 0,
+     numberReturned: 1,
+     documents: [ [Object] ],
+     cursorNotFound: false,
+     queryFailure: false,
+     shardConfigStale: false,
+     awaitCapable: true,
+     promoteLongs: true,
+     promoteValues: true,
+     promoteBuffers: false,
+     index: 44,
+     hashedName: '29bafad3b32b11dc7ce934204952515ea5984b3c' } }
+[0mDELETE /deleteRequest [32m200 [0m11.448 ms - 14[0m
+[0mGET /? [36m304 [0m0.356 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.713 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.761 ms - -[0m
 In the GET route
-{}
-[0mGET /getComments [32m200 [0m2.712 ms - 2[0m
-[0mGET / [36m304 [0m1.378 ms - -[0m
-[0mGET /javascripts/comments.js [36m304 [0m0.406 ms - -[0m
+[ { _id: 5bee55254810757ec2b6129f,
+    Name: 'McKenna',
+    Request: 'I\'m still sleeping',
+    Duration: 730,
+    __v: 0 } ]
+[0mGET /getRequests [32m200 [0m2.586 ms - 107[0m

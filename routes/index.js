@@ -49,7 +49,7 @@ router.get('/getRequests', function(req, res, next) {
 router.delete('/deleteRequest', function(req, res, next) {
     console.log("In the deleteRequest route");
     console.log(req.body);
-    db.collection("requests").remove( req.body, true, function(err, obj) {
+    db.collection("requests").remove( req.body, function(err, obj) {
         if (err) return console.error(err);
         else {
             console.log(obj);

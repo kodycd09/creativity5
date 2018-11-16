@@ -42,10 +42,7 @@ $(document).ready(function(){
                 $("#done").html(url + " for " + name + (textStatus == "success" ? " succeeded" : "failed"));
                 $("#name").html("");
                 $("#request").html("");
-                $("#comments").html("");
-                $.each( data, function( i, val ) {
-                    $("#comments").append("<br>" + data[i].Name + ": " + data[i].Comment);
-                });
+                $("#duration").html("");
             }
         })
     });
