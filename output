@@ -1,0 +1,100 @@
+nohup: ignoring input
+Connected
+[0mGET / [36m304 [0m5.279 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.482 ms - -[0m
+[0mGET http://5.188.210.12/echo.php [33m404 [0m237.340 ms - 2013[0m
+Error: Failed to lookup view "error" in views directory "/var/www/html/lab-5-mongo-kodycd09/views"
+    at EventEmitter.render (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/response.js:1008:7)
+    at /var/www/html/lab-5-mongo-kodycd09/app.js:38:7
+    at Layer.handle_error (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:315:13)
+    at /var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/lab-5-mongo-kodycd09/app.js:27:3
+    at Layer.handle [as handle_request] (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:317:13)
+    at /var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:635:15
+    at next (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:260:14)
+[0mGET / [32m200 [0m4.432 ms - 697[0m
+[0mGET /javascripts/comments.js [32m200 [0m1.363 ms - 1746[0m
+[0mGET /favicon.ico [33m404 [0m2.016 ms - 2013[0m
+Error: Failed to lookup view "error" in views directory "/var/www/html/lab-5-mongo-kodycd09/views"
+    at EventEmitter.render (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/response.js:1008:7)
+    at /var/www/html/lab-5-mongo-kodycd09/app.js:38:7
+    at Layer.handle_error (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/layer.js:71:5)
+    at trim_prefix (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:315:13)
+    at /var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/lab-5-mongo-kodycd09/app.js:27:3
+    at Layer.handle [as handle_request] (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:317:13)
+    at /var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:335:12)
+    at next (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:275:10)
+    at /var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:635:15
+    at next (/var/www/html/lab-5-mongo-kodycd09/node_modules/express/lib/router/index.js:260:14)
+POST comment route
+{ Name: 'TA', Comment: 'a' }
+{ _id: 5bec8a0616bcf0556eee72ba, Name: 'TA', Comment: 'a' }
+{ _id: 5bec8a0616bcf0556eee72ba,
+  Name: 'TA',
+  Comment: 'a',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m42.361 ms - 2[0m
+POST comment route
+{ Name: 'TA', Comment: 'b' }
+{ _id: 5bec8a0816bcf0556eee72bb, Name: 'TA', Comment: 'b' }
+{ _id: 5bec8a0816bcf0556eee72bb,
+  Name: 'TA',
+  Comment: 'b',
+  __v: 0 }
+[0mPOST /comment [32m200 [0m4.085 ms - 2[0m
+POST comment route
+{ Name: '2', Comment: 'b' }
+{ _id: 5bec8a0a16bcf0556eee72bc, Name: '2', Comment: 'b' }
+{ _id: 5bec8a0a16bcf0556eee72bc, Name: '2', Comment: 'b', __v: 0 }
+[0mPOST /comment [32m200 [0m4.221 ms - 2[0m
+POST comment route
+{ Name: '2', Comment: 'c' }
+{ _id: 5bec8a0d16bcf0556eee72bd, Name: '2', Comment: 'c' }
+{ _id: 5bec8a0d16bcf0556eee72bd, Name: '2', Comment: 'c', __v: 0 }
+[0mPOST /comment [32m200 [0m2.659 ms - 2[0m
+In the GET route
+{}
+[0mGET /getComments [32m200 [0m19.938 ms - 275[0m
+In the PUT route
+2
+[ { _id: 5bec8a0a16bcf0556eee72bc, Name: '2', Comment: 'b', __v: 0 },
+  { _id: 5bec8a0d16bcf0556eee72bd, Name: '2', Comment: 'c', __v: 0 } ]
+[0mPUT /getPersonComments [32m200 [0m4.907 ms - 137[0m
+In the GET route
+{}
+[0mGET /getComments [36m304 [0m2.959 ms - -[0m
+In the PUT route
+TA
+[ { _id: 5bec8a0616bcf0556eee72ba,
+    Name: 'TA',
+    Comment: 'a',
+    __v: 0 },
+  { _id: 5bec8a0816bcf0556eee72bb,
+    Name: 'TA',
+    Comment: 'b',
+    __v: 0 } ]
+[0mPUT /getPersonComments [32m200 [0m3.907 ms - 139[0m
+In the GET route
+{}
+[0mGET /getComments [36m304 [0m3.417 ms - -[0m
+In the DELETE route
+[0mDELETE /deleteComments [32m200 [0m2.500 ms - 14[0m
+In the GET route
+{}
+[0mGET /getComments [32m200 [0m2.712 ms - 2[0m
+[0mGET / [36m304 [0m1.378 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.406 ms - -[0m
